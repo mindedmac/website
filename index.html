@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mindedmac</title>
+
+    <style>
+        body {
+            margin: 25px 0 0;
+            background: #fff2e0 center repeat-y;
+            text-align: center;
+            font-family: "Cambria Math", Cambria, "Times New Roman", serif;
+            color: #2B0000;
+        }
+
+        #main {
+            width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #quote {
+            width: 995px;
+            margin: 0 auto;
+            height: 0;
+            line-height: 8px;
+            padding: 0;
+
+            font-family: "Cambria Math", Cambria, "Times New Roman", serif;
+            font-size: 20px;
+            color: #fff;
+            text-align: left;
+            vertical-align: bottom;
+        }
+
+        #header {
+            padding: 5px 0;
+        }
+
+        #side-container {
+            float: left;
+            width: 150px;
+            margin-right: 20px;
+
+            display: block;
+            text-align: left;
+        }
+
+        .photo {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .name-email {
+            text-align: left;
+            margin-bottom: 8px;
+        }
+
+        #navigation {
+            width: 150px;
+            margin: 0;
+
+            font-family: "Cambria Math", Cambria, "Times New Roman", serif;
+            font-size: 100%;
+            font-weight: bold;
+            color: #707070;
+            text-align: left;
+        }
+
+        #content {
+            width: 820px;
+            margin-left: 170px;
+            padding: 5px;
+
+            overflow: visible;
+            text-align: left;
+
+            font-family: "Cambria Math", Cambria, "Times New Roman", serif;
+            font-size: 100%;
+            color: #2B0000;
+        }
+
+        #footer {
+            padding: 40px 0 10px;
+            clear: left;
+
+            font-family: "Cambria Math", Cambria, "Times New Roman", serif;
+            font-size: 70%;
+            color: #707070;
+
+            text-align: center;
+            font-style: italic;
+        }
+
+        h1 {
+            margin: 0 0 15px;
+            padding-top: 2px;
+
+            color: #B22222;
+            font-size: 180%;
+            font-weight: normal;
+            text-align: right;
+
+            border-bottom: 1px solid #B22222;
+        }
+
+        p {
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        a,
+        a:hover {
+            color: #B22222;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a.small-navigation {
+            color: #9E2B2B;
+            text-decoration: none;
+        }
+
+        a.small-navigation:hover {
+            color: #FF6347;
+        }
+
+        a.navigation {
+            display: block;
+            padding: 3px 0 3px 5px;
+
+            color: #5A0E0E;
+            text-align: left;
+            text-decoration: none;
+            font-weight: normal;
+
+            border-left: 5px solid #F5C6C6;
+        }
+
+        a.navigation:hover {
+            border-color: #B22222;
+            background: #FDECEA;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+
+        <!-- Optional quote/header section -->
+        <!--
+        <header id="quote">
+            <span style="color:black;">
+                <b>
+                    Insert quote or short statement here.
+                </b>
+            </span>
+        </header>
+        -->
+
+        <!-- Banner artwork -->
+        <a
+            href="https://www.nga.gov/artworks/82648-green-river-cliffs-wyoming"
+            title="Green River Cliffs, Wyoming by Thomas Moran"
+        >
+            <img
+                src="assets/green_river_cliffs_wyoming_2011.2.1.jpg"
+                alt="Green River Cliffs, Wyoming painting by Thomas Moran"
+                title="Green River Cliffs, Wyoming by Thomas Moran"
+                style="width:999px;height:255px;"
+            />
+        </a>
+
+        <!-- Sidebar -->
+        <aside id="side-container">
+
+            <!-- Profile image -->
+            <img
+                src="assets/photo.png"
+                alt="Portrait photograph of Garrett Cress"
+                class="photo"
+            />
+
+            <!-- Name -->
+            <div class="name-email">
+                <span style="color:black;">
+                    <b>Garrett Cress</b>
+                </span>
+            </div>
+
+            <!-- External links / contact tiles -->
+            <div
+                style="
+                    display:grid;
+                    grid-template-columns:repeat(3, 1fr);
+                    gap:10px;
+                    margin-top:12px;
+                    margin-bottom:14px;
+                    width:150px;
+                "
+            >
+
+                <!-- GitHub -->
+                <a
+                    href="https://github.com/mindedmac"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="text-align:center;"
+                >
+                    <img
+                        src="https://cdn.brandfetch.io/idZAyF9rlg/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1779162684348"
+                        alt="GitHub"
+                        style="
+                            width:30px;
+                            height:30px;
+                            opacity:0.92;
+                            filter:grayscale(100%) brightness(0.22);
+                        "
+                    />
+                </a>
+
+                <!-- LinkedIn -->
+                <a
+                    href="https://linkedin.com/in/yourusername"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="text-align:center;"
+                >
+                    <img
+                        src="https://cdn.brandfetch.io/idJFz6sAsl/theme/dark/idtEseDv1X.svg?c=1bxid64Mup7aczewSAYMX&t=1740370996685"
+                        alt="LinkedIn"
+                        style="width:28px;height:28px;opacity:0.92;"
+                    />
+                </a>
+
+                <!-- Project Euler -->
+                <a
+                    href="#"
+                    onclick="
+                        navigator.clipboard.writeText('2302181_v7jDicLAhFGfXOyaixKfdiUeqBB4n4u9');
+                        alert('Project Euler friend key copied.');
+                        return false;
+                    "
+                    style="text-align:center;"
+                >
+                    <img
+                        src="https://cdn.brandfetch.io/idbSm89Lm1/w/250/h/45/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1768971623088"
+                        alt="Project Euler"
+                        style="
+                            width:28px;
+                            height:28px;
+                            opacity:0.92;
+                        "
+                    />
+                </a>
+
+
+            </div>
+
+            <!-- Navigation moved below tiles -->
+            <nav id="navigation" style="margin-top:4px;">
+                <a href="#latest" class="navigation">Latest</a>
+                <a href="#about-me" class="navigation">About Me</a>
+                <a href="#events" class="navigation">Past Events</a>
+                <a href="#archive" class="navigation">Archive</a>
+
+                <!-- Future links -->
+                <!--<a href="#awards" class="navigation">Awards</a>-->
+            </nav>
+
+        </aside>
+
+        <!-- Main content -->
+        <main id="content">
+
+            <!-- Latest updates -->
+            <section id="latest">
+                <h1>
+                    <span style="color:black;">Latest</span>
+                </h1>
+
+                <ul>
+                    <li>
+                        <a href="https://wwppc.org/wwpit">
+                            WWPIT (West Windsor-Plainsboro Informatics Tournament)
+                        </a>
+
+                        <span style="font-size:0.8rem;color:rgba(255,123,0,0.61);">
+                            [June 14th 2026]
+                        </span>
+                    </li>
+
+                    <li>
+                        <a href="https://fep.statler.wvu.edu/academics/aces-academy-of-engineering-success">
+                            WVU AcES Program
+                        </a>
+
+                        <span style="font-size:0.8rem;color:rgba(255,123,0,0.61);">
+                            [August 10th 2026]
+                        </span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- About section -->
+            <section id="about-me">
+                <h1>
+                    <span style="color:black;">
+                        About Me
+
+                        <small>
+                            [
+                            <a href="more.html" title="More information about Garrett Cress">
+                                more
+                            </a>
+                            ]
+                        </small>
+                    </span>
+                </h1>
+
+                <ul>
+                    An undergraduate CS student at WVU minoring in Mathematics
+                    and Chinese. My interests lie in algorithms, complexity theory,
+                    and competitive programming, with a growing interest in research.
+                </ul>
+            </section>
+
+            <!-- Events / accomplishments -->
+            <section id="events">
+
+                <h1>
+                    <span style="color:black;">Past Events</span>
+                </h1>
+
+                <ul>
+
+                    <!-- Programming competitions -->
+                    <strong>Programming Competitions</strong>
+
+                    <ul>
+                        <li>
+                            <a href="https://www.academies-it.org/">
+                                2026 ACL Informatics Tournament
+                            </a>
+
+                            — 5th place Advanced Division.
+
+                            <span style="font-size:0.8rem;color:rgba(255,123,0,0.9);">
+                                [
+                                <a
+                                    href="https://activities.tjhsst.edu/tjioi/"
+                                    style="color:rgba(255,123,0,0.9);text-decoration:none;"
+                                >
+                                Problem Solutions
+                                </a>
+                                ]
+                            </span>
+                        </li>
+                        <li>
+                            <a href="https://activities.tjhsst.edu/tjioi/"
+                            sty>
+                                TJIOI 2026
+                            </a>
+
+                            — High School Division, 1st place.
+
+                            <span style="font-size:0.8rem;color:rgba(255,123,0,0.9);">
+                                [
+                                <a
+                                    href="https://activities.tjhsst.edu/tjioi/"
+                                    style="color:rgba(255,123,0,0.9);text-decoration:none;"
+                                >
+                                    Problem Solutions
+                                </a>
+                                ]
+                            </span>
+                        </li>
+
+                        <li>
+                            <a href="https://www.eventbrite.com/e/uva-hspc-2026-registration-1445103105289?aff=oddtdtcreator">
+                                UVA HSPC 2026
+                            </a>
+
+                            — Division 1, 10th place.
+
+                            <span style="font-size:0.8rem;color:rgba(255,123,0,0.9);">
+                                [
+                                <a
+                                    href="https://acm.cs.virginia.edu/data/2026-d1-solutions.pdf"
+                                    style="color:rgba(255,123,0,0.9);text-decoration:none;"
+                                >
+                                    Problem Solutions
+                                </a>
+                                ]
+                            </span>
+                        </li>
+                    </ul>
+
+                    <!-- Hackathons -->
+                    <strong>Hackathons</strong>
+
+                    <ul>
+                        <li>
+                            <a href="https://devpost.com/software/save-the-trees?_gl=1*mvbeia*_gcl_au*MTIwMzg1ODAuMTc3NTk2ODM0OA..*_ga*OTg5ODY4MTQ3LjE3NzU5NjgzNDg.*_ga_0YHJK3Y10M*czE3NzU5NjgzNDgkbzEkZzEkdDE3NzU5Njg3OTYkajQ4JGwwJGgw">
+                                2023 Phoenix Environmental Hackathon
+                            </a>
+
+                            — 2nd place.
+                        </li>
+                    </ul>
+
+                    <!-- Talks -->
+                    <strong>Talks</strong>
+
+                    <ul>
+                        <li>
+                            <a href="https://academieshacks.com/">
+                                Algorithms in OCaml &amp; Other Functional Languages 
+                            </a>
+
+                            — ACL
+                        </li>
+                    </ul>
+
+                </ul>
+            </section>
+
+            <!-- Archive section -->
+            <section id="archive">
+                <h1>
+                    <span style="color:black;">Archive</span>
+                </h1>   
+
+                <ul>
+                        A collection of past projects, writings, and other
+                        materials can be found on my
+                            <a
+                                href="archive.html"
+                                style="color:rgba(255,123,0,0.9);font-weight:bold;"
+                            >
+                               [ Archive ]
+                            </a>
+                            page.
+                        </li>
+                    </ul>
+                </section>
+
+            <!-- Optional awards section -->
+            <!--
+            <section id="awards">
+                <h1>
+                    <span style="color:black;">Awards</span>
+                </h1>
+
+                <ul>
+                    <li>
+                        Example award
+                        <a href="link">reference link</a>.
+                    </li>
+                </ul>
+            </section>
+            -->
+
+        </main>
+
+        <div style="clear:both;"></div>
+
+        <!-- Footer -->
+        <footer id="footer" style="width:1000px;">
+            Last modified: May 22nd, 2026
+        </footer>
+
+    </div>
+</body>
+</html>
