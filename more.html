@@ -17,9 +17,12 @@
         }
 
         #main {
-            width: 1000px;
+            width: 85%;
+            max-width: 1000px;
             margin: 0 auto;
             text-align: left;
+            transform: scale(0.85);
+            transform-origin: top center;
         }
 
         #side-container {
@@ -126,13 +129,44 @@
             display: none;
         }
     </style>
+    <script>
+        let useWinterImage = false;
+
+        function updateBannerImage() {
+            const img = document.getElementById('bannerImg');
+            const today = new Date();
+            const month = today.getMonth() + 1;
+            const day = today.getDate();
+            
+            const isWinterSeason = (month > 10) || (month === 10 && day >= 31);
+            
+            if (useWinterImage || isWinterSeason) {
+                img.src = 'assets/ww.jpg';
+            } else {
+                img.src = 'assets/woodburn.jpg';
+            }
+        }
+
+        function toggleBannerImage() {
+            useWinterImage = !useWinterImage;
+            updateBannerImage();
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key.toLowerCase() === 'w') {
+                toggleBannerImage();
+            }
+        });
+
+        window.addEventListener('load', updateBannerImage);
+    </script>
 
 </head>
 
 <body>
     <div id="main">
 
-        <img src="assets/woodburn.jpg" style="width:999px;height:400px;" alt="Banner">
+        <img id="bannerImg" src="assets/woodburn.jpg" style="width:100%;height:400px;" alt="Banner">
 
         <aside id="side-container">
 
